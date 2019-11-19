@@ -1,0 +1,31 @@
+{
+  "name": "nerdutils",
+  "version": "1.0.0",
+  "description": "utility scss library for all nerdy projects",
+  "main": "index.js",
+  "repository": "github.com/nerdynz/nerdutils",
+  "author": "Joshua Cave",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.13.0",
+    "postcss-cli": "^6.1.3",
+    "rimraf": "^2.7.1"
+  },
+  "scripts": {
+    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output css/nerdutils.css css/nerdutils.css",
+    "build-cleancss": "cleancss -o css/nerdutils.min.css css/nerdutils.css",
+    "build-clean": "rimraf css",
+    "build-sass": "node-sass --output-style expanded --source-map true nerdutils.scss css/nerdutils.css",
+    "deploy": "npm run build",
+    "start": "npm run build-sass -- --watch"
+  },
+  "files": [
+    "css",
+    "nerdutils.scss",
+    "LICENSE",
+    "README.md"
+  ]
+}
