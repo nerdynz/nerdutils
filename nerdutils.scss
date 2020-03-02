@@ -396,7 +396,7 @@ table.has-seemless-controls {
   }
 
   .link {
-    padding: 0.45rem;
+    // padding: 0.45rem;
   }
 }
 
@@ -433,7 +433,7 @@ table.has-seemless-controls {
     position: absolute;
     right: 0;
     display: inline-block;
-    top: 0;
+    top: -2;
     z-index: 6;
   }
 }
@@ -452,10 +452,31 @@ table.has-seemless-controls {
   }
 }
 
+.is-percentage {
+  .control {
+    &::after {
+      content: "%";
+      position: absolute;
+      left: 0.5rem;
+      display: block;
+      z-index: 10;
+      font-size: $size-small;
+      line-height: 40px;
+    }
+  }
+}
+
 tr.has-error {
   td, th {
     .input, .textarea, .select {
       border-color: $red;
     }
+  }
+}
+
+.is-vertical-centered .table,
+.table.is-vertical-centered {
+  td, th {
+    vertical-align: middle;
   }
 }
