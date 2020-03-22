@@ -439,11 +439,16 @@ table.has-seemless-controls {
 }
 
 .is-currency {
+  .input {
+    padding-left: 1rem;
+  }
   .control {
+    position: relative;
     &::after {
       content: "$";
       position: absolute;
       left: 0.5rem;
+      top: 0;
       display: block;
       z-index: 10;
       font-size: $size-small;
@@ -453,11 +458,16 @@ table.has-seemless-controls {
 }
 
 .is-percentage {
+  .input {
+    padding-left: 1rem;
+  }
   .control {
+    position: relative;
     &::after {
       content: "%";
       position: absolute;
       left: 0.5rem;
+      top: 0;
       display: block;
       z-index: 10;
       font-size: $size-small;
