@@ -117,27 +117,39 @@ $weight-bold: 700 !default;
   padding-right: 1rem;
 }
 
+.u-s-pl,
 .u-sm-pl {
   padding-left: 0.5rem;
 }
 
+.u-s-pr,
 .u-sm-pr {
   padding-right: 0.5rem;
 }
 
+.u-s-pt,
 .u-sm-pt {
   padding-top: 0.5rem;
 }
 
+.u-s-pb,
 .u-sm-pb {
   padding-bottom: 0.5rem;
 }
 
+.u-s-ptb,
 .u-sm-ptb {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
+.u-s-plr,
+.u-sm-plr {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.u-s-p,
 .u-sm-p {
   padding: 0.5rem;
 }
